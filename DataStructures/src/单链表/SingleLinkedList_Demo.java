@@ -24,8 +24,14 @@ public class SingleLinkedList_Demo {
         singleLinkedList.showStudent(singleLinkedList);
         System.out.println("=======================");
 
+        //测试在尾部增加学生
+        Student test = new Student(199,"G","3rd");
+        singleLinkedList.addStudent(test);
+        singleLinkedList.showStudent(singleLinkedList);
+        System.out.println("=======================");
+
         //测试删除学生
-        singleLinkedList.deleteStudent(78);
+        singleLinkedList.deleteStudent(124);
         singleLinkedList.showStudent(singleLinkedList);
         System.out.println("=======================");
 

@@ -48,6 +48,10 @@ public class SingleLinkedList {
                 if ((temp.getNext_student().getId()) != sid) {
                     temp = temp.getNext_student();
                 } else if ((temp.getNext_student().getId()) == sid) {
+                    if (temp.getNext_student().getNext_student()==null){
+                        temp.setNext_student(null);
+                        break;
+                    }
                     temp.setNext_student(temp.getNext_student().getNext_student());
                     break;
                 }
